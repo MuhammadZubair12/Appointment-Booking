@@ -14,7 +14,7 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/appointment_booking/css/appointment_booking.css"
-# app_include_js = "/assets/appointment_booking/js/appointment_booking.js"
+app_include_js = "/assets/appointment_booking/www/js/appointment_booking.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/appointment_booking/css/appointment_booking.css"
@@ -40,7 +40,7 @@ app_license = "MIT"
 # ----------
 
 # application home page (will override Website Settings)
-# home_page = "login"
+home_page = "appointment"
 
 # website user home page (by Role)
 # role_home_page = {

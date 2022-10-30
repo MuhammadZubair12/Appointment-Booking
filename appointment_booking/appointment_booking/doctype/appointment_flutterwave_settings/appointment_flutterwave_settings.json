@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-28 17:18:41.244422",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "public_key",
+  "secret_key",
+  "merchant_id",
+  "column_break_4",
+  "currency",
+  "redirect_url",
+  "pay_button_heading"
+ ],
+ "fields": [
+  {
+   "fieldname": "public_key",
+   "fieldtype": "Data",
+   "label": "Public Key"
+  },
+  {
+   "fieldname": "secret_key",
+   "fieldtype": "Data",
+   "label": "Secret Key"
+  },
+  {
+   "fieldname": "merchant_id",
+   "fieldtype": "Data",
+   "label": "Merchant ID"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "UGX",
+   "fieldname": "currency",
+   "fieldtype": "Select",
+   "label": "Currency",
+   "options": "\nUGX\nGHS\nZMW\nRWF\nXOF\nTZS\nKES\nMWK"
+  },
+  {
+   "fieldname": "redirect_url",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Redirect Url"
+  },
+  {
+   "fieldname": "pay_button_heading",
+   "fieldtype": "Data",
+   "label": "Pay Button Heading"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-10-28 17:18:49.814670",
+ "modified_by": "Administrator",
+ "module": "Appointment Booking",
+ "name": "Appointment Flutterwave Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
