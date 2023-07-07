@@ -116,7 +116,7 @@ async function services() {
             pa.innerHTML += ` 
             {% set currencysymbal = frappe.db.get_single_value('Global Defaults', 'default_currency') %}
             <div class="col-md-4 col-sm-6" style="    margin-bottom: 7%;
-            width: 33% !important;">
+            ">
             <div class="pricingTable">
                 <h3 class="title"><span>${slot.name}</span></h3>
                 <ul class="pricing-content">
