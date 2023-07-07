@@ -1,0 +1,39 @@
+{
+ "based_on": "creation",
+ "chart_name": "Appointment",
+ "chart_type": "Count",
+ "color": "#CB2929",
+ "creation": "2023-07-07 09:16:57.980139",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "Appointment",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[[\"Appointment\",\"appointment_with\",\"=\",null,false],[\"Appointment\",\"customer_name\",\"like\",null,false],[\"Appointment\",\"customer_email\",\"like\",null,false],[\"Appointment\",\"party\",\"=\",null,false],[\"Appointment\",\"status\",\"=\",null,false],[\"Appointment\",\"creation\",\"Between\",null,false],[\"Appointment\",\"_assign\",\"=\",null,false]]",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2023-07-07 09:17:00.125252",
+ "modified_by": "Administrator",
+ "module": "Appointment Booking",
+ "name": "Appointment",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Accounts Manager"
+  }
+ ],
+ "source": "",
+ "time_interval": "Yearly",
+ "timeseries": 1,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "value_based_on": "",
+ "y_axis": []
+}

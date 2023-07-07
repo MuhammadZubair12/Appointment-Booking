@@ -1,0 +1,87 @@
+{
+ "charts": [
+  {
+   "chart_name": "Appointment",
+   "label": "Appointment"
+  }
+ ],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<br>\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Appointment\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Appointment\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}}]",
+ "creation": "2023-07-07 09:10:16.413123",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "users",
+ "idx": 0,
+ "label": "Appointment Booking",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Home Page Setting",
+   "link_count": 0,
+   "link_to": "Landing Page Setting",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Flutterwave Settings",
+   "link_count": 0,
+   "link_to": "Appointment Flutterwave Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appointment",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appointment",
+   "link_count": 0,
+   "link_to": "Appointment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Available Services",
+   "link_count": 0,
+   "link_to": "Available Services List",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-07-07 09:25:50.616689",
+ "modified_by": "Administrator",
+ "module": "Appointment Booking",
+ "name": "Appointment Booking",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 2.0,
+ "shortcuts": [],
+ "title": "Appointment Booking"
+}

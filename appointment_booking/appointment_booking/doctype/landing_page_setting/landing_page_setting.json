@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-06 23:54:54.228836",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "image",
+  "column_break_1",
+  "heading",
+  "section_break_4",
+  "description",
+  "page_details",
+  "privacy_policy",
+  "terms_of_service",
+  "company_start_year"
+ ],
+ "fields": [
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "heading",
+   "fieldtype": "Data",
+   "label": "Introduction Heading"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Introduction Description"
+  },
+  {
+   "fieldname": "page_details",
+   "fieldtype": "Text Editor",
+   "label": "Page Details"
+  },
+  {
+   "fieldname": "privacy_policy",
+   "fieldtype": "Data",
+   "label": "Privacy Policy Link"
+  },
+  {
+   "fieldname": "terms_of_service",
+   "fieldtype": "Data",
+   "label": "Terms of Service Link"
+  },
+  {
+   "description": "For Example:\n\u00a9 2019 Coveted Consultant",
+   "fieldname": "company_start_year",
+   "fieldtype": "Data",
+   "label": "Company Start Year"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-07-07 08:38:43.746097",
+ "modified_by": "Administrator",
+ "module": "Appointment Booking",
+ "name": "Landing Page Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

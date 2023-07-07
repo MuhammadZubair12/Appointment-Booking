@@ -168,7 +168,7 @@ function package(slot) {
 
 async function get_avail_services(name) {
     let servicess = (await frappe.call({
-        method: 'appointment_booking.www.book_appointment.index.get_services',
+        method: 'appointment_booking.www.new_book_appointment.index.get_services',
         args: {
             name:name
         }
