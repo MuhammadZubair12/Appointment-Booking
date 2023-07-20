@@ -70,11 +70,11 @@
                                                                 <div class="fl-photo fl-photo-align-center" itemscope=""
                                                                     itemtype="https://schema.org/ImageObject">
                                                                     <div class="fl-photo-content fl-photo-img-jpg">
-                                                                        <img loading="lazy"
+                                                                        <img loading="lazy" style="height: auto !important;"
                                                                             class="fl-photo-img wp-image-3693 size-full"
                                                                             src="{% if doc.image %} {{doc.image}} {% else %} https://covetedconsultant.com/wp-content/uploads/2019/01/alzay-bio-grey.jpg {% endif %}"
                                                                             alt="alzay-bio-grey" itemprop="image"
-                                                                            height="319" width="319"
+                                                                             width="319"
                                                                             sizes="(max-width: 319px) 100vw, 319px"
                                                                             title="alzay-bio-grey">
                                                                     </div>
@@ -136,7 +136,7 @@
                                                     line-height: 1.45;
                                                     font-style: normal;
                                                     padding: 0;
-                                                    word-wrap: break-word;">Dear Consultant,</p>
+                                                    word-wrap: break-word; display:none !important">Dear Consultant,</p>
                                                     {% if doc.page_details %}
                                                     {{doc.page_details}}
                                                     {% else %}
@@ -329,9 +329,15 @@
                                                             data-node="5f288e0ec9fc0">
                                                             <div class="fl-module-content fl-node-content">
                                                                 <div class="fl-rich-text">
+                                                                    {% if doc.sincerely_heading %}
+                                                                    <p>
+                                                                        {{doc.sincerely_heading}}
+                                                                    </p>
+                                                                    {% else %}
                                                                     <p>Sincerely,<br>
-                                                                        Alzay Calhoun<br>
+                                                                        Muhammad Yusaf<br>
                                                                         Founder, Coveted Consultant</p>
+                                                                    {% endif %}
                                                                 </div>
                                                             </div>
                                                         </div>

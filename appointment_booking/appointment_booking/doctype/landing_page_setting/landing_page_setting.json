@@ -13,6 +13,7 @@
   "section_break_4",
   "description",
   "page_details",
+  "sincerely_heading",
   "privacy_policy",
   "terms_of_service",
   "company_start_year"
@@ -61,12 +62,17 @@
   {
    "fieldname": "section_break_4",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sincerely_heading",
+   "fieldtype": "Text Editor",
+   "label": "Sincerely Heading"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-07-07 08:38:43.746097",
+ "modified": "2023-07-20 19:45:24.787061",
  "modified_by": "Administrator",
  "module": "Appointment Booking",
  "name": "Landing Page Setting",

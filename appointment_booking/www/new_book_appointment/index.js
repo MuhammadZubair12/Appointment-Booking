@@ -231,6 +231,7 @@ function onClick(e){
 }
 
 function package(slot) {
+    // console.log("Slot am", slot.price)
     var btn_ss = document.getElementById('btn_ss');
     let da = document.getElementById('duration-value');
     let na = document.getElementById('name-value');
@@ -447,8 +448,10 @@ function afterpayment() {
     alert("Pay")
 }
 
+
 function payNow(e) {
     e.preventDefault();
+    // console.log("AM",document.getElementById("pika").textContent)
     FlutterwaveCheckout({
       public_key: document.getElementById("public_key").value,
       tx_ref: "ak_"+Math.floor((Math.random()*1000000000)+1),
