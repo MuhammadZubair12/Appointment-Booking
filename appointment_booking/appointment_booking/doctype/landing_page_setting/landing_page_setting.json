@@ -11,6 +11,8 @@
   "column_break_2",
   "image",
   "column_break_1",
+  "certified",
+  "column_break_6",
   "heading",
   "section_break_4",
   "description",
@@ -78,12 +80,21 @@
   {
    "fieldname": "column_break_2",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "certified",
+   "fieldtype": "Attach Image",
+   "label": "Certified Logo"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-07-21 10:22:16.090133",
+ "modified": "2023-07-21 19:28:20.083564",
  "modified_by": "Administrator",
  "module": "Appointment Booking",
  "name": "Landing Page Setting",
