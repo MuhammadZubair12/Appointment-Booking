@@ -3,6 +3,7 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script type="text/javascript"
     src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    {% set doc = frappe.get_doc("Landing Page Setting") %}
 <div class="fl-page">
     <header
         class="fl-page-header fl-page-header-primary fl-page-nav-right fl-page-nav-toggle-icon fl-page-nav-toggle-visible-mobile"
@@ -16,12 +17,27 @@
                     <div class="fl-page-header-logo" style="display: flex;
                         justify-content: space-between;
                         margin-top: 3%;" itemscope="itemscope" itemtype="https://schema.org/Organization">
-                        <a href="" itemprop="url"><img loading="false" data-no-lazy="1"
-                                class="fl-logo-img" itemscope="" itemtype="https://schema.org/ImageObject"
-                                src="https://covetedconsultant.com/wp-content/uploads/2018/04/cc-by-alzay-logo.png"
-                                data-retina="" title="" alt="Coveted Consultant">
-                            <meta itemprop="name" content="Coveted Consultant">
-                        </a>
+                        {% if doc.logo %}
+
+                            <a href="" itemprop="url">
+                                <img style="width: 50%"  loading="false" data-no-lazy="1" class="fl-logo-img" itemscope=""
+                                    itemtype="https://schema.org/ImageObject"
+                                    src="{{doc.logo}}"
+                                    data-retina="" title="" alt="Coveted Consultant">
+                                <meta itemprop="name" content="Coveted Consultant">
+                            </a>
+                        {% else %}
+
+                            <a href="" itemprop="url">
+                                <img style="width: 50%" loading="false" data-no-lazy="1" class="fl-logo-img" itemscope=""
+                                    itemtype="https://schema.org/ImageObject"
+                                    src="assets/appointment_booking/www/Image/erpchampions.jpeg"
+                                    data-retina="" title="" alt="Coveted Consultant">
+                                <meta itemprop="name" content="Coveted Consultant">
+                            </a>
+
+                        {% endif %}
+                        
                         <div style="    margin-top: 2%;
                             margin-right: 3%">
                             <div style="background: #d53936;
@@ -31,9 +47,9 @@
                             border-radius: 4px;
                             padding-top: 6px;">
 
-                            <a href="/new_book_appointment" style="background: #d03b31 ;
+                                <a href="/new_book_appointment" style="background: #d03b31 ;
                                 color: #fffdfd; text-decoration: none;">Book Now</a>
-                        </div>
+                            </div>
                         </div>
                     </div>
 
@@ -42,7 +58,7 @@
             </div>
         </div>
     </header><!-- .fl-page-header -->
-    {% set doc = frappe.get_doc("Landing Page Setting") %}
+   
 
     <div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main">
 
@@ -70,11 +86,12 @@
                                                                 <div class="fl-photo fl-photo-align-center" itemscope=""
                                                                     itemtype="https://schema.org/ImageObject">
                                                                     <div class="fl-photo-content fl-photo-img-jpg">
-                                                                        <img loading="lazy" style="height: auto !important;"
+                                                                        <img loading="lazy"
+                                                                            style="height: auto !important;"
                                                                             class="fl-photo-img wp-image-3693 size-full"
                                                                             src="{% if doc.image %} {{doc.image}} {% else %} https://covetedconsultant.com/wp-content/uploads/2019/01/alzay-bio-grey.jpg {% endif %}"
                                                                             alt="alzay-bio-grey" itemprop="image"
-                                                                             width="319"
+                                                                            width="319"
                                                                             sizes="(max-width: 319px) 100vw, 319px"
                                                                             title="alzay-bio-grey">
                                                                     </div>
@@ -121,13 +138,13 @@
                                                 </div>
                                             </div>
 
-                                          
+
 
                                             <div style="border-top: 1px solid;
                                             padding-top: 8%;
                                             margin-top: 5%;
                                             border-color: #85858570;">
-                                               
+
                                                 <div class="fl-rich-text">
                                                     <p style="    color: #000;
                                                     font-family: serif;
@@ -136,190 +153,26 @@
                                                     line-height: 1.45;
                                                     font-style: normal;
                                                     padding: 0;
-                                                    word-wrap: break-word; display:none !important">Dear Consultant,</p>
+                                                    word-wrap: break-word; display:none !important">Dear Consultant,
+                                                    </p>
                                                     {% if doc.page_details %}
                                                     {{doc.page_details}}
                                                     {% else %}
-                                                   
-                                                    <p>My name is Alzay Calhoun and this website exists
+
+                                                    <p>My name is Yousaf and this website exists
                                                         to help you scale your consulting company by
                                                         productizing. Productizing is a strategy that
                                                         allows expert, serviced-based companies to grow
                                                         predictably without getting caught up in the
                                                         flash-in-the-pan, shiny-object strategy of the
                                                         day.</p>
-                                                    <p>When I say “scale”, this is what I mean:</p>
-                                                    <ul>
-                                                        <li>Develop premium consulting services with
-                                                            predictable profit margins that are easy for
-                                                            clients to understand and buy.</li>
-                                                        <li>Streamline your operations and remove
-                                                            yourself from the day-to-day grind of your
-                                                            business.</li>
-                                                        <li>Rapidly build your authority in the
-                                                            marketplace and drastically improve the
-                                                            experience you deliver to each and every
-                                                            client you serve.</li>
-                                                    </ul>
-                                                    <p>However...</p>
-                                                    <h3>The strategies included on this website are NOT
-                                                        for everyone.</h3>
-                                                    <p>You should press the back button now if:</p>
-                                                    <p>a) You are in between careers and only want one
-                                                        or two clients<br>
-                                                        b) You prefer to charge by the hour or work a
-                                                        shift at the client site<br>
-                                                        c) You're under financial pressure and needs
-                                                        clients fast<br>
-                                                        d) You're looking for tips, tricks, and secrets
-                                                        to “growth hack” your consulting business<br>
-                                                        e) You enjoy doing 100% custom (bespoke) work
-                                                        for your clients</p>
-                                                    <p>To be clear, there is nothing wrong with any of
-                                                        the above situations. I do not wish to blame,
-                                                        shame, or judge in any way. Still, there is a
-                                                        specific business model I am going to encourage
-                                                        you to build and there are certain
-                                                        pre-requisites for success. If your situation is
-                                                        reflected in the 5 bullets listed above, you
-                                                        should press the “back” button on your browser
-                                                        now.</p>
-                                                    <h3>The strategies on this site are BEST for the
-                                                        following types of consultants</h3>
-                                                    <p>You should keep reading if:</p>
-                                                    <p>a) You have existing expertise and offer it to
-                                                        clients in the form of services.<br>
-                                                        b) You sell directly to businesses or business
-                                                        people<br>
-                                                        c) You sell expensive, complex services that
-                                                        require explanation<br>
-                                                        d) You want faster lead generation, less scope
-                                                        creep, fewer custom proposals, and more profit
-                                                        per engagement<br>
-                                                        e) You are looking for a stable business model
-                                                        that allows you more time, money, and energy
-                                                        freedom</p>
-                                                    <h3>The conventional approach to business consulting
-                                                        is flawed.<br>
-                                                        I tried and I BURNED OUT.</h3>
-                                                    <p>Yes indeed, I know burnout. I met him personally.
-                                                        I started offering marketing consulting services
-                                                        in 2008. Here is my short story.</p>
-                                                    <p>I sold every service I knew how to deliver. I
-                                                        sold web design, video marketing, launch
-                                                        services, email campaigns, landing page
-                                                        creation, content writing, conversion services,
-                                                        and more. I was so overwhelmed I would often get
-                                                        confused on which scope of work belonged to a
-                                                        given client.</p>
-                                                    <p>I used every client-attraction method at my
-                                                        disposal. I used cold email, cold calling,
-                                                        proposals, free consults, networking, referrals,
-                                                        content marketing, paid ads, etc. All of those
-                                                        things worked “a little bit”, but the constant
-                                                        experimentation left me exhausted.<br>
-                                                        In the end, I didn't have any energy left.
-                                                        Nothing. The grind left me overwhelmed,
-                                                        exhausted, confused, and depressed. My business
-                                                        began to shrink and my family began to complain.
-                                                        I was failing both at the same time. Something
-                                                        about this had to change...</p>
-                                                    <h3>Productizing changed my business. It allowed me
-                                                        “scale”.</h3>
-                                                    <p>Productizing simplified everything. I was clear
-                                                        on what to sell. My clients were clear on what
-                                                        to buy. My support team was clear on what to
-                                                        execute. It was a better deal for all involved.
-                                                        Growth became possible again.</p>
-                                                    <h3>But what does “scale” mean?</h3>
-                                                    <p>Everyone wants to “scale”, but most are doing it
-                                                        wrong. Most people are chasing mystical,
-                                                        “hockey-stick explosion” growth. This is
-                                                        exciting to read about in an entrepreneurship
-                                                        magazine, but it’s an unpractical pursuit for
-                                                        the everyday consulting business.</p>
-                                                    <p>To be a bit more grounded, let’s stop and define
-                                                        “scale”. Miriam-Webster defines scale as
-                                                        "capable of being easily expanded or upgraded on
-                                                        demand". So what we really mean is...</p>
-                                                    <h3>“Scale” equals “control”.</h3>
-                                                    <p>If you can expand something easily you have
-                                                        control over it. If you can upgrade something on
-                                                        demand you have control over it. So really,
-                                                        “scale” means you have control over how fast
-                                                        your business upgrades or expands.</p>
-                                                    <p>This begins to explain why the conventional
-                                                        wisdom on how to scale hasn’t worked for you. At
-                                                        this point, I’m sure you’ve seen/heard a number
-                                                        of strategies of how to scale a consulting
-                                                        business. You’ve been told to:</p>
-                                                    <p>a) Hire employees.<br>
-                                                        b) Run paid advertisements.<br>
-                                                        c) Create more content<br>
-                                                        d) Write a book<br>
-                                                        e) Launch a program or digital course<br>
-                                                        f) Expand your service offerings<br>
-                                                        g) Build a software platform<br>
-                                                        h) Integrate automation tools<br>
-                                                        i) Implement marketing funnels,<br>
-                                                        j) etc</p>
-                                                    <p>All of these ideas sound great when they're
-                                                        pitched to you. But, what happens in the real
-                                                        world? It never works the way it was described
-                                                        in the video, course, or training. Each idea
-                                                        balloons into a mess of unexpected requirements,
-                                                        issues, and costs. You never scale. You never
-                                                        get control.</p>
-                                                    <h3>Most consultants assume that doing more =
-                                                        getting more.</h3>
-                                                    <p>This is a common assumption. On one level it
-                                                        makes a lot of sense</p>
-                                                    <p>If I do more marketing, I’ll get more clients.
-                                                        Right?<br>
-                                                        If I offer more services, I’ll get more sales.
-                                                        Right?<br>
-                                                        If I hire more people, I’ll get more speed.
-                                                        Right?</p>
-                                                    <p>Wrong.</p>
-                                                    <p>You know this because it’s happening to you right
-                                                        now. You’ve already tried 100 different things.
-                                                        Have you scaled faster or slower? Do you feel
-                                                        like you have more or less control?</p>
-                                                    <p>The ugly truth is: doing more costs more. It cost
-                                                        more of your time, energy, and money as you
-                                                        understand, execute, and manage an increasing
-                                                        number of moving parts.</p>
-                                                    <p>The only way to get the control (and scale) you
-                                                        want is by thinking about your business another
-                                                        way.</p>
-                                                    <h3>It’s safer (and smarter) to do less.</h3>
-                                                    <p>What is a safer, smarter way to scale? Do fewer
-                                                        things. Why?</p>
-                                                    <p>It’s easier to control. There is less to
-                                                        manage.<br>
-                                                        It’s easier to create predictability. There are
-                                                        fewer surprises.<br>
-                                                        It’s easier to establish a standard of
-                                                        excellence. You can get better each time.</p>
-                                                    <h3>The consultants who enjoy this website most are
-                                                        those who are comfortable committing to a small
-                                                        number of premium activities.</h3>
-                                                    <p>I want you to develop premium consulting services
-                                                        with predictable profit margins that are easy
-                                                        for clients to understand and buy.</p>
-                                                    <p>I want you to streamline your operations and
-                                                        remove yourself from the day-to-day grind of
-                                                        your business.</p>
-                                                    <p>I want you to rapidly build your authority in the
-                                                        marketplace and drastically improve the
-                                                        experience you deliver to each and every client
-                                                        you serve.</p>
+                                                  
                                                     <p>Welcome to the Coveted Consultant website! It’s
                                                         best to start with this free training that
                                                         describes the entire approach.</p>
                                                     {% endif %}
                                                 </div>
-                                        
+
                                             </div>
 
                                             <div class="fl-col-group fl-node-5f288e0ec9fbe" data-node="5f288e0ec9fbe">
@@ -369,11 +222,14 @@
                         <aside id="text-11" class="fl-widget widget_text">
                             <div class="textwidget">
                                 <font size="2" style="color:white">
-                                    <center>{% if doc.company_start_year %} {{doc.company_start_year}} {% else %} © 2021 Erp Champions Consultant{% endif %} <br>
-                                        <a href="{% if doc.privacy_policy %} {{doc.privacy_policy}} {% else %} {% endif %}" style=" color: #428bca !important;" target="_blank"
-                                            rel="noopener">Privacy Policy</a> | <a
-                                            href="{% if doc.terms_of_service %} {{doc.terms_of_service}} {% else %} {% endif %}"  style=" color: #428bca !important;"  target="_blank"
-                                            rel="noopener">Terms of Service</a>
+                                    <center>{% if doc.company_start_year %} {{doc.company_start_year}} {% else %} © 2021
+                                        Erp Champions Consultant{% endif %} <br>
+                                        <a href="{% if doc.privacy_policy %} {{doc.privacy_policy}} {% else %} {% endif %}"
+                                            style=" color: #428bca !important;" target="_blank" rel="noopener">Privacy
+                                            Policy</a> | <a
+                                            href="{% if doc.terms_of_service %} {{doc.terms_of_service}} {% else %} {% endif %}"
+                                            style=" color: #428bca !important;" target="_blank" rel="noopener">Terms of
+                                            Service</a>
                                     </center>
                                 </font>
                             </div>
